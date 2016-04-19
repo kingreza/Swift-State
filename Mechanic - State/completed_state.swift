@@ -23,12 +23,15 @@ class CompletedState: State {
   func getAssignedMechanic(context: Context) -> Mechanic? {
     return mechanic
   }
+
   func getMessageToCustomer(context: Context) -> String {
     return "Thank you for using YourMechanic."
   }
+
   func getPrice(context: Context) -> Double? {
     return price
   }
+
   func getReceipt(context: Context) -> Receipt? {
     return receipt
   }

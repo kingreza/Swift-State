@@ -21,15 +21,17 @@ class BookedState: State {
   func getAssignedMechanic(context: Context) -> Mechanic? {
     return mechanic
   }
+
   func getMessageToCustomer(context: Context) -> String {
     return "Your appointment has been booked with \(mechanic.name)."
   }
+
   func getPrice(context: Context) -> Double? {
     return price
   }
+
   func getReceipt(context: Context) -> Receipt? {
     print("a booked quote doesn't have a receipt")
     return nil
   }
-
 }
