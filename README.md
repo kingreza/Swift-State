@@ -5,4 +5,4 @@ A quote goes through many phases before it becomes an appointment and is complet
 We need a system that can provide us with an interface to get the price, customized message for the user regarding the quote's state, and the receipt.
 <h3>The solution:</h3>
 
-Link to the repo for the completed project: <a href="https://github.com/kingreza/Swift-Chain-Of-Responsibility"> Swift - Chain Of Responsibility </a>
+Link to the repo for the completed project: <a href="https://github.com/kingreza/Swift-State/"> Swift - State </a>
