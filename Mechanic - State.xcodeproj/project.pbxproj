@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5796D0BD1CC612D800286191 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D0BC1CC612D800286191 /* main.swift */; };
+		5796D0C51CC6134600286191 /* state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D0C41CC6134600286191 /* state.swift */; };
+		5796D0C71CC6137100286191 /* context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D0C61CC6137100286191 /* context.swift */; };
+		5796D0C91CC6147B00286191 /* mechanic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D0C81CC6147B00286191 /* mechanic.swift */; };
+		5796D0CB1CC614B000286191 /* receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D0CA1CC614B000286191 /* receipt.swift */; };
+		5796D0CE1CC6153F00286191 /* submitted_state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D0CD1CC6153F00286191 /* submitted_state.swift */; };
+		5796D0D01CC6154800286191 /* ready_state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D0CF1CC6154800286191 /* ready_state.swift */; };
+		5796D0D21CC6155A00286191 /* pending_state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D0D11CC6155A00286191 /* pending_state.swift */; };
+		5796D0D41CC6156600286191 /* booked_state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D0D31CC6156600286191 /* booked_state.swift */; };
+		5796D0D61CC6157200286191 /* completed_state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796D0D51CC6157200286191 /* completed_state.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +34,15 @@
 /* Begin PBXFileReference section */
 		5796D0B91CC612D700286191 /* Mechanic - State */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mechanic - State"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5796D0BC1CC612D800286191 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5796D0C41CC6134600286191 /* state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = state.swift; sourceTree = "<group>"; };
+		5796D0C61CC6137100286191 /* context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = context.swift; sourceTree = "<group>"; };
+		5796D0C81CC6147B00286191 /* mechanic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mechanic.swift; sourceTree = "<group>"; };
+		5796D0CA1CC614B000286191 /* receipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = receipt.swift; sourceTree = "<group>"; };
+		5796D0CD1CC6153F00286191 /* submitted_state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = submitted_state.swift; sourceTree = "<group>"; };
+		5796D0CF1CC6154800286191 /* ready_state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ready_state.swift; sourceTree = "<group>"; };
+		5796D0D11CC6155A00286191 /* pending_state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pending_state.swift; sourceTree = "<group>"; };
+		5796D0D31CC6156600286191 /* booked_state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = booked_state.swift; sourceTree = "<group>"; };
+		5796D0D51CC6157200286191 /* completed_state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = completed_state.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +75,26 @@
 		5796D0BB1CC612D800286191 /* Mechanic - State */ = {
 			isa = PBXGroup;
 			children = (
+				5796D0CC1CC6153300286191 /* states */,
 				5796D0BC1CC612D800286191 /* main.swift */,
+				5796D0C41CC6134600286191 /* state.swift */,
+				5796D0C61CC6137100286191 /* context.swift */,
+				5796D0C81CC6147B00286191 /* mechanic.swift */,
+				5796D0CA1CC614B000286191 /* receipt.swift */,
 			);
 			path = "Mechanic - State";
+			sourceTree = "<group>";
+		};
+		5796D0CC1CC6153300286191 /* states */ = {
+			isa = PBXGroup;
+			children = (
+				5796D0CD1CC6153F00286191 /* submitted_state.swift */,
+				5796D0CF1CC6154800286191 /* ready_state.swift */,
+				5796D0D11CC6155A00286191 /* pending_state.swift */,
+				5796D0D31CC6156600286191 /* booked_state.swift */,
+				5796D0D51CC6157200286191 /* completed_state.swift */,
+			);
+			name = states;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +107,7 @@
 				5796D0B51CC612D700286191 /* Sources */,
 				5796D0B61CC612D700286191 /* Frameworks */,
 				5796D0B71CC612D700286191 /* CopyFiles */,
+				5796D0C31CC612F300286191 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -114,12 +150,38 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5796D0C31CC612F300286191 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5796D0B51CC612D700286191 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5796D0BD1CC612D800286191 /* main.swift in Sources */,
+				5796D0CB1CC614B000286191 /* receipt.swift in Sources */,
+				5796D0D01CC6154800286191 /* ready_state.swift in Sources */,
+				5796D0D61CC6157200286191 /* completed_state.swift in Sources */,
+				5796D0D41CC6156600286191 /* booked_state.swift in Sources */,
+				5796D0D21CC6155A00286191 /* pending_state.swift in Sources */,
+				5796D0C91CC6147B00286191 /* mechanic.swift in Sources */,
+				5796D0CE1CC6153F00286191 /* submitted_state.swift in Sources */,
+				5796D0C71CC6137100286191 /* context.swift in Sources */,
+				5796D0C51CC6134600286191 /* state.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
