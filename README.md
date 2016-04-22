@@ -271,7 +271,7 @@ class Receipt {
     self.customerName = customerName
   }
 }
-
+````
 Nothing out of the ordinary here. Our Mechanic object is a simple struct with a name property. Our receipt object too is a simple struct with a delivered, total and customerName property. These values are each set by their respective initializer method.
 
 Let's put it all together and see who it looks like. For our test case we are going to play out the following scenario:
