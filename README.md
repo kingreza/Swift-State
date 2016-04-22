@@ -1,3 +1,6 @@
+<h1>Design Patterns in Swift: State</h1>
+This repository is part of a series. For the full list check out <a href="https://shirazian.wordpress.com/2016/04/11/design-patterns-in-swift/">Design Patterns in Swift</a>
+ 
 <h3>The Problem:</h3>
 
 A quote goes through many phases before it is completed by a mechanic. Initially a customer request a quote, once received, our system attempts to automatically provide a quote for the customer. If our system doesn't have enough information, the quote becomes pending. At this state a member of our customer support team finds out what's needed to provide a ready quote. Once a quote is ready, the customer can use it to book an appointment. Once an appointment is booked a mechanic is assigned to the quote. We need to be able to retrieve this mechanic's information. When the appointment is completed we generate a receipt and send it to the customer.
